@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malvinas: Voces del Frente | Demo Nivel 1 - Toma de Grytviken</title>
+  <meta name="description"
+    content="Landing page oficial de la Demo v1.0 del videojuego indie 'Malvinas: Voces del Frente'. Descarga la demo jugable de la Toma de la Base Científica Grytviken.">
+  <meta name="keywords"
+    content="Malvinas, Voces del Frente, videojuego indie, demo exe, Grytviken, pixel art, juego táctico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Press+Start+2P&family=Rajdhani:wght@600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ==========================================
+       Navegación / Header
+       ========================================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#hero">
+        <i class="fas fa-crosshairs text-info me-2 fs-4"></i>
+        <span class="navbar-brand-title">MALVINAS <span class="text-info">VOCES DEL FRENTE</span></span>
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+        aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre-proyecto">Proyecto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mision-grytviken">Misión Grytviken</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#video-demo">Tráiler Demo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#caracteristicas">Características</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#galeria">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#descarga">Descarga .EXE</a>
+          </li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <a class="btn btn-tactical-primary btn-sm px-3" href="#descarga" id="navQuickDownloadBtn">
+              <i class="fas fa-download me-1"></i> Demo v1.0
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ==========================================
+       Hero Section
+       ========================================== -->
+  <header id="hero" class="hero-section">
+    <div class="hero-overlay-grid"></div>
+    <div class="container relative-z">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-7">
+          <!-- Badge de Versión Demo -->
+          <div class="badge-alpha">
+            <i class="fas fa-satellite-dish me-1"></i> Demo Alfa v1.0 Jugable &bull; Nivel 1
+          </div>
+
+          <!-- Título Principal -->
+          <h1 class="hero-title mb-3">
+            MALVINAS
+            <span class="highlight"><i class="fas fa-shield-alt me-2"></i>VOCES DEL FRENTE</span>
+          </h1>
+
+          <!-- Subtítulo / Descripción resumida -->
+          <p class="hero-subtitle">
+            Un videojuego indie táctico y de supervivencia con estética 16-bit. Sumérgete en la recreación histórica de
+            la toma de la base científica Grytviken y experimenta el rigor del frente subantártico.
+          </p>
+
+          <!-- Botones de Acción principales -->
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <a href="#descarga" class="btn btn-tactical-primary btn-lg">
+              <i class="fas fa-download me-2"></i> Descargar Demo (.EXE)
+            </a>
+            <a href="#video-demo" class="btn btn-tactical-outline btn-lg">
+              <i class="fas fa-play-circle me-2"></i> Ver Tráiler Demo
+            </a>
+          </div>
+
+          <!-- Especificaciones Rápidas de la Demo -->
+          <div class="d-flex align-items-center gap-4 text-muted fs-6 pt-2">
+            <span><i class="fab fa-windows text-info me-1"></i> Windows PC</span>
+            <span><i class="fas fa-hdd text-info me-1"></i> ~180 MB</span>
+            <span><i class="fas fa-gamepad text-info me-1"></i> Teclado / Gamepad</span>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <!-- Tarjeta HUD interactiva del juego -->
+          <div class="hud-card fire-accent">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-secondary font-pixel text-uppercase" style="font-size: 0.65rem;">HUD STATUS</span>
+              <span class="text-info font-pixel" style="font-size: 0.7rem;"><i class="fas fa-clock me-1"></i>
+                00:05</span>
+            </div>
+
+            <!-- Captura de pantalla del juego: soldado y fogata -->
+            <div class="ratio ratio-16x9 rounded overflow-hidden mb-3 border border-info shadow">
+              <img src="assets/images/soldado_fogata.png" alt="Captura de pantalla: Soldado y Fogata" class="object-fit-cover w-100 h-100">
+            </div>
+
+            <div class="d-flex justify-content-between font-heading fs-6 mb-1 text-white">
+              <span>SALUD / VITALIDAD</span>
+              <span class="text-danger">85%</span>
+            </div>
+            <div class="progress mb-3" style="height: 8px; background: rgba(255,255,255,0.1);">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 85%"></div>
+            </div>
+
+            <div class="d-flex justify-content-between font-heading fs-6 mb-1 text-white">
+              <span>ESTAMINA / ENERGÍA</span>
+              <span class="text-info">60%</span>
+            </div>
+            <div class="progress" style="height: 8px; background: rgba(255,255,255,0.1);">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 60%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ==========================================
+       Sección: Sobre El Proyecto
+       ========================================== -->
+  <section id="sobre-proyecto" class="py-5">
+    <div class="container py-4">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-6">
+          <span class="text-info font-heading fw-bold text-uppercase tracking-wider">VISIÓN E INDIE DEV</span>
+          <h2 class="section-title d-block mb-4">Sobre el Proyecto</h2>
+
+          <!-- Bloque de Texto Editable para el Desarrollador -->
+          <div class="pe-lg-3">
+            <p class="lead text-light">
+              <strong>"Malvinas: Voces del Frente"</strong> es un proyecto apasionante desarrollado de forma
+              independiente que busca reflejar la vivencia, el rigor táctico y las historias humanas del conflicto
+              austral.
+            </p>
+            <p class="text-muted">
+              Mediante una estética en <em>pixel art</em> cuidadosamente elaborada y mecánicas de sigilo, exploración y
+              supervivencia, el juego transporta al jugador a escenarios clave ambientados en el archipiélago y las
+              islas del Atlántico Sur.
+            </p>
+            <p class="text-muted">
+              Esta primera versión demo permite probar de forma anticipada las mecánicas principales en un nivel
+              completo, abarcando la toma estratégica de la base científica Grytviken.
+            </p>
+
+            <div class="dev-swap-note mt-3">
+              <i class="fas fa-info-circle me-1"></i>
+              <strong>Nota para el creador:</strong> Puedes editar directamente este texto en <code>index.html</code>
+              para actualizar la sinopsis o detalles del desarrollo.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="hud-card military-accent">
+            <h4 class="font-heading text-white mb-3"><i class="fas fa-compass text-success me-2"></i> Aspectos
+              Fundamentales</h4>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="p-3 rounded bg-dark border border-secondary h-100">
+                  <i class="fas fa-map-marked-alt text-info fs-3 mb-2"></i>
+                  <h5 class="font-heading text-white fs-6">Fidelidad Geográfica</h5>
+                  <p class="text-muted mb-0 small">Recreación táctica de terrenos, costas e instalaciones del entorno
+                    insular.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-3 rounded bg-dark border border-secondary h-100">
+                  <i class="fas fa-user-shield text-success fs-3 mb-2"></i>
+                  <h5 class="font-heading text-white fs-6">Sigilo y Táctica</h5>
+                  <p class="text-muted mb-0 small">Planificación de cada movimiento, gestión de recursos y uso del
+                    entorno.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-3 rounded bg-dark border border-secondary h-100">
+                  <i class="fas fa-snowflake text-info fs-3 mb-2"></i>
+                  <h5 class="font-heading text-white fs-6">Supervivencia al Frío</h5>
+                  <p class="text-muted mb-0 small">El clima subantártico es un enemigo constante; mantener el calor es
+                    vital.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-3 rounded bg-dark border border-secondary h-100">
+                  <i class="fas fa-volume-up text-warning fs-3 mb-2"></i>
+                  <h5 class="font-heading text-white fs-6">Ambientación Sonora</h5>
+                  <p class="text-muted mb-0 small">Efectos de audio envolventes y banda sonora original retro.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       Sección: Misión Grytviken (Nivel Demo)
+       ========================================== -->
+  <section id="mision-grytviken" class="py-5 bg-dark bg-opacity-50">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="text-info font-heading fw-bold text-uppercase">NIVEL 1 EN LA DEMO</span>
+        <h2 class="section-title center-title d-block mx-auto mb-3">Toma de la Base Científica Grytviken</h2>
+        <p class="text-muted">
+          La demo jugable te sitúa al mando en las frías costas de Grytviken (Islas Georgias del Sur). Tu objetivo es
+          asegurar la estación meteorológica y de comunicaciones manteniendo el control táctico.
+        </p>
+      </div>
+
+      <div class="row gy-4 align-items-center">
+        <!-- Ficha de Briefing -->
+        <div class="col-lg-6">
+          <div class="dossier-box">
+            <div class="dossier-stamp">CLASIFICADO</div>
+            <div class="dossier-title">
+              <i class="fas fa-file-alt text-info me-2"></i> DOSSIER OPERATIVO: MISIÓN GRYTVIKEN
+            </div>
+            <p class="text-muted small mb-3">
+              <strong>Coordenadas:</strong> 54°16′S 36°30′W &bull; <strong>Condición Climática:</strong> Vientos
+              fuertes, visibilidad reducida por nieve.
+            </p>
+
+            <h6 class="font-heading text-white mt-3 mb-2">OBJETIVOS DE LA DEMO:</h6>
+            <ul class="dossier-list">
+              <li>Infiltración sigilosa desde la caleta marítima hacia la franja costera.</li>
+              <li>Neutralizar la vigilancia perimetral sin alertar a los puestos de radio principales.</li>
+              <li>Asegurar el edificio de la estación científica e inspeccionar los registros operativos.</li>
+              <li>Gestionar los suministros térmicos y refugios ante ráfagas heladas.</li>
+            </ul>
+
+            <div class="mt-4 pt-3 border-top border-secondary d-flex justify-content-between align-items-center">
+              <span class="text-muted small"><i class="fas fa-layer-group text-success me-1"></i> Nivel completo
+                disponible</span>
+              <span class="tag-badge">VERSIÓN DEMO v1.0</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vista Previa del Mapa de la Misión -->
+        <div class="col-lg-6">
+          <div class="hud-card">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h5 class="font-heading text-white mb-0"><i class="fas fa-map text-info me-2"></i> Vista del Archipiélago
+                / Caleta</h5>
+              <span class="badge bg-info text-dark font-pixel">MAPA V1.0</span>
+            </div>
+
+            <!-- Vista de mapa con imagen de paisaje real -->
+            <div class="ratio ratio-16x9 rounded overflow-hidden border border-info mb-3">
+              <img src="assets/images/Grytvyken_Satelite.png"
+                alt="Mapa Geográfico Grytviken" class="object-fit-cover">
+              <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-75">
+                <small class="text-info font-heading"><i class="fas fa-crosshairs me-1"></i> Sector Operativo: Bahía
+                  Grytviken</small>
+              </div>
+            </div>
+
+            <p class="text-muted small mb-0">
+              * El mapa del juego ha sido modelado respetando la topografía costera, los muelles históricos y la
+              vegetación subantártica.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       Sección: Tráiler / Vídeo Demo
+       ========================================== -->
+  <section id="video-demo" class="py-5">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="text-info font-heading fw-bold text-uppercase">GAMEPLAY & TRAILER</span>
+        <h2 class="section-title center-title d-block mx-auto mb-3">Vídeo de la Demo Jugable</h2>
+        <p class="text-muted">
+          Echa un vistazo al avance en vídeo con secuencias del desarrollo y mecánicas de juego en acción.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="video-wrapper">
+            <!-- Poster del vídeo con botón de Play deslumbrante -->
+            <div class="video-poster-container" id="videoPoster" data-bs-toggle="modal" data-bs-target="#videoModal"
+              style="background-image: linear-gradient(rgba(11, 13, 20, 0.5), rgba(11, 13, 20, 0.8)), url('assets/images/malvinas_fondo.png');"
+              data-video-src="https://www.youtube.com/embed/y5lL_8F2cOs?si=CDNIQS6d21BjhnNQ">
+
+              <div class="text-center">
+                <div class="play-btn-pulse mx-auto mb-3">
+                  <i class="fas fa-play ms-1"></i>
+                </div>
+                <h4 class="font-heading text-white">REPRODUCIR TRAILER DE LA DEMO</h4>
+                <p class="text-info font-pixel mb-0" style="font-size: 0.75rem;">HAZ CLIC PARA VER EN PANTALLA COMPLETA
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="dev-swap-note mt-3 text-center">
+            <i class="fas fa-code me-1"></i>
+            <strong>Cómo poner tu propio vídeo:</strong> En <code>js/main.js</code> o en el atributo
+            <code>data-video-src</code> de <code>index.html</code>, reemplaza la URL por el enlace de tu tráiler de
+            YouTube o de Vimeo.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       Sección: Características Clave
+       ========================================== -->
+  <section id="caracteristicas" class="py-5 bg-dark bg-opacity-50">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="text-info font-heading fw-bold text-uppercase">MECÁNICAS Y ESTILO</span>
+        <h2 class="section-title center-title d-block mx-auto mb-3">Características Destacadas</h2>
+        <p class="text-muted">
+          Diseñado para ofrecer una experiencia retro profunda, táctica y envolvente.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="hud-card h-100 text-center">
+            <div class="mb-3 text-info">
+              <i class="fas fa-th fa-3x"></i>
+            </div>
+            <h5 class="font-heading text-white mb-2">Pixel Art Táctico</h5>
+            <p class="text-muted small">
+              Estética retro detallada hecha píxel a píxel, inspirada en los grandes clásicos de la era 16-bit.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="hud-card h-100 text-center fire-accent">
+            <div class="mb-3 text-danger">
+              <i class="fas fa-fire-alt fa-3x"></i>
+            </div>
+            <h5 class="font-heading text-white mb-2">Mecánica de Fogata</h5>
+            <p class="text-muted small">
+              Encuentra y enciende puntos de calor estratégicos para evitar el congelamiento y restaurar salud.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="hud-card h-100 text-center military-accent">
+            <div class="mb-3 text-success">
+              <i class="fas fa-eye-slash fa-3x"></i>
+            </div>
+            <h5 class="font-heading text-white mb-2">Sigilo Inmersivo</h5>
+            <p class="text-muted small">
+              Aprovecha las coberturas del terreno, la oscuridad y el sonido para avanzar sin ser detectado.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="hud-card h-100 text-center">
+            <div class="mb-3 text-warning">
+              <i class="fas fa-gamepad fa-3x"></i>
+            </div>
+            <h5 class="font-heading text-white mb-2">Control Fluido</h5>
+            <p class="text-muted small">
+              Soporte nativo para teclado y mouse o mando de PC con respuesta precisa en combate.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       Sección: Galería de Capturas del Juego
+       ========================================== -->
+  <section id="galeria" class="py-5">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="text-info font-heading fw-bold text-uppercase">CAPTURAS DEL DESARROLLO</span>
+        <h2 class="section-title center-title d-block mx-auto mb-3">Galería del Juego</h2>
+        <p class="text-muted">
+          Haz clic en las capturas para ampliarlas. *Puedes reemplazar fácilmente estas fotos agregando tus propias
+          capturas en la carpeta <code>assets/images/</code>.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Captura 1 -->
+        <div class="col-md-4">
+          <div class="screenshot-card" data-title="Punto de Fogata y Soldado"
+            data-desc="Escena de supervivencia en el nivel 1">
+            <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=600&q=80"
+              alt="Captura Juego 1">
+            <div class="screenshot-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span class="font-heading text-white">Soldado & Fogata</span>
+              <small class="text-info">Gestión de calor</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Captura 2 -->
+        <div class="col-md-4">
+          <div class="screenshot-card" data-title="Interfaz de Combate y HUD"
+            data-desc="Vista táctica con barras de vitalidad y estamina">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80"
+              alt="Captura Juego 2">
+            <div class="screenshot-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span class="font-heading text-white">HUD Táctico</span>
+              <small class="text-info">Métricas en tiempo real</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Captura 3 -->
+        <div class="col-md-4">
+          <div class="screenshot-card" data-title="Base Científica Grytviken"
+            data-desc="Mapa costero y puestos de control">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80"
+              alt="Captura Juego 3">
+            <div class="screenshot-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span class="font-heading text-white">Base Grytviken</span>
+              <small class="text-info">Entorno insular</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       Sección: Zona de Descarga (.EXE)
+       ========================================== -->
+  <section id="descarga" class="py-5 bg-dark bg-opacity-75">
+    <div class="container py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="download-card">
+            <div class="download-badge">
+              <i class="fas fa-star me-1"></i> DEMO GRATUITA
+            </div>
+
+            <div class="row gy-4 align-items-center">
+              <div class="col-lg-7">
+                <span class="text-info font-heading fw-bold">DESCARGA DIRECTA DE LA DEMO</span>
+                <h2 class="font-heading text-white display-6 mb-3">Obtén la Demo v1.0 (.EXE)</h2>
+                <p class="text-muted mb-4">
+                  Incluye el nivel 1 completo ("Toma de la Base Científica Grytviken"). No requiere instalación
+                  compleja, descarga y ejecuta en tu PC con Windows.
+                </p>
+
+                <!-- Botón de Descarga Principal -->
+                <div class="d-flex flex-wrap gap-3 align-items-center">
+                  <!-- Si colocas el archivo en la carpeta downloads/, cambia href a: downloads/Malvinas_Demo_Grytviken.exe -->
+                  <a href="#" id="downloadDemoBtn" class="btn btn-tactical-primary btn-lg">
+                    <i class="fas fa-download me-2"></i> Descargar Malvinas_Demo.exe
+                  </a>
+
+                  <button id="copyLinkBtn" class="btn btn-tactical-outline">
+                    <i class="fas fa-link me-1"></i> Copiar Enlace
+                  </button>
+                </div>
+
+                <div class="mt-3 text-muted small">
+                  <i class="fas fa-download text-info me-1"></i> Descargas simuladas: <span id="downloadCount"
+                    class="text-white fw-bold">342</span> usuarios
+                </div>
+              </div>
+
+              <!-- Ficha de Requisitos del Sistema -->
+              <div class="col-lg-5">
+                <div class="p-3 rounded bg-dark border border-secondary">
+                  <h5 class="font-heading text-info border-bottom border-secondary pb-2 mb-3">
+                    <i class="fas fa-laptop-code me-2"></i> Requisitos del Sistema
+                  </h5>
+
+                  <table class="download-specs-table">
+                    <tr>
+                      <th>Sistema Operativo:</th>
+                      <td>Windows 10 / 11 (64-bit)</td>
+                    </tr>
+                    <tr>
+                      <th>Procesador:</th>
+                      <td>Intel i3 / AMD Ryzen 3</td>
+                    </tr>
+                    <tr>
+                      <th>Memoria RAM:</th>
+                      <td>4 GB RAM</td>
+                    </tr>
+                    <tr>
+                      <th>Gráficos:</th>
+                      <td>DirectX 11 compatible (Intel HD 4000+)</td>
+                    </tr>
+                    <tr>
+                      <th>Almacenamiento:</th>
+                      <td>200 MB de espacio disponible</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- Guía rápida de Instalación -->
+            <div class="mt-4 pt-4 border-top border-secondary">
+              <h6 class="font-heading text-white mb-2"><i class="fas fa-info-circle text-warning me-2"></i>
+                Instrucciones de Instalación:</h6>
+              <ol class="text-muted small ps-3 mb-0">
+                <li>Haz clic en el botón de descarga arriba para obtener el ejecutable <code>.exe</code> o comprimido
+                  <code>.zip</code>.</li>
+                <li>Descomprime el archivo en una carpeta de tu preferencia.</li>
+                <li>Ejecuta <code>Malvinas_VocesDelFrente.exe</code> y ¡disfruta de la demo!</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       Sección: Feedback y Contacto
+       ========================================== -->
+  <section id="feedback" class="py-5">
+    <div class="container py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="hud-card">
+            <div class="text-center mb-4">
+              <span class="text-info font-heading fw-bold text-uppercase">TU OPINIÓN ES FUNDAMENTAL</span>
+              <h3 class="font-heading text-white">¿Probaste la Demo? Déjanos tu Feedback</h3>
+              <p class="text-muted small">
+                ¿Encontraste algún error o tienes sugerencias para mejorar el juego? Escríbenos directamente.
+              </p>
+            </div>
+
+            <div id="feedbackAlert" class="alert alert-success d-none font-heading" role="alert">
+              <i class="fas fa-check-circle me-2"></i> ¡Muchas gracias por tu comentario! Nos ayuda mucho a seguir
+              mejorando la demo.
+            </div>
+
+            <form id="feedbackForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="feedbackName" class="form-label font-heading text-white small">Tu Nombre /
+                    Nickname</label>
+                  <input type="text" class="form-control form-control-tactical" id="feedbackName"
+                    placeholder="Ej: GamerTáctico" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="feedbackEmail" class="form-label font-heading text-white small">Correo Electrónico
+                    (Opcional)</label>
+                  <input type="email" class="form-control form-control-tactical" id="feedbackEmail"
+                    placeholder="tu@email.com">
+                </div>
+                <div class="col-12">
+                  <label for="feedbackMsg" class="form-label font-heading text-white small">Tus Comentarios o Reporte de
+                    Errores</label>
+                  <textarea class="form-control form-control-tactical" id="feedbackMsg" rows="4"
+                    placeholder="Cuéntanos qué te pareció el nivel Grytviken, rendimiento o mecánicas..."
+                    required></textarea>
+                </div>
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn btn-tactical-military px-5 mt-2">
+                    <i class="fas fa-paper-plane me-2"></i> Enviar Comentarios
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       Footer / Pie de Página
+       ========================================== -->
+  <footer>
+    <div class="container text-center">
+      <div class="d-flex justify-content-center gap-3 mb-4">
+        <a href="#" class="social-link" title="Discord"><i class="fab fa-discord"></i></a>
+        <a href="#" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="social-link" title="Itch.io"><i class="fas fa-gamepad"></i></a>
+        <a href="#" class="social-link" title="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+      </div>
+
+      <p class="font-heading text-white mb-1 fs-5">
+        MALVINAS: VOCES DEL FRENTE
+      </p>
+      <p class="text-muted small mb-3">
+        Proyecto Indie &bull; Demo Alfa v1.0 &bull; Nivel Grytviken
+      </p>
+      <div class="text-muted style-italic" style="font-size: 0.8rem;">
+        &copy; 2026 Malvinas: Voces del Frente. Todos los derechos reservados. Desarrollado con pasión para la
+        comunidad.
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ==========================================
+       Modales (Vídeo, Lightbox, Descarga Info)
+       ========================================== -->
+
+  <!-- Modal 1: Tráiler Demo Vídeo -->
+  <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark border border-info">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title font-heading text-white" id="videoModalLabel">
+            <i class="fas fa-play-circle text-info me-2"></i> Tráiler - Malvinas: Voces del Frente
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+          <div class="ratio ratio-16x9">
+            <iframe id="demoIframe" src="" title="Tráiler del juego" allowfullscreen allow="autoplay"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Lightbox Imagen Ampliada -->
+  <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark border border-secondary">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title font-heading text-white">Visualizador de Capturas</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center p-3">
+          <img id="lightboxImage" src="" alt="Captura ampliada" class="img-fluid rounded border border-secondary mb-3">
+          <div id="lightboxCaption" class="text-light"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Instrucciones si no hay .EXE local aún -->
+  <div class="modal fade" id="downloadInstructionsModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark border border-warning">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title font-heading text-warning">
+            <i class="fas fa-exclamation-triangle me-2"></i> Configuración de Descarga
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-light">
+          <p>
+            ¡Hola! Has hecho clic en el botón de descarga de la Demo.
+          </p>
+          <p class="small text-muted">
+            Para enlazar tu archivo <code>.exe</code> ejecutable real, coloca el archivo en la carpeta del proyecto (por
+            ejemplo en <code>downloads/Malvinas_Demo.exe</code>) y actualiza el atributo <code>href</code> del botón
+            <code>#downloadDemoBtn</code> en <code>index.html</code>.
+          </p>
+        </div>
+        <div class="modal-footer border-secondary">
+          <button type="button" class="btn btn-tactical-outline btn-sm" data-bs-dismiss="modal">Entendido</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
