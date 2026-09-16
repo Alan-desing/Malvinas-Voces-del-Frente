@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // 1. Scroll Effect en Navbar
+  // 1. Scroll Effect y Menú Hamburguesa en Navbar
   const navbar = document.querySelector('.navbar-custom');
   if (navbar) {
     window.addEventListener('scroll', function () {
@@ -73,6 +73,35 @@ document.addEventListener('DOMContentLoaded', function () {
         navbar.classList.remove('shadow-lg');
         navbar.style.background = 'rgba(11, 13, 20, 0.9)';
       }
+    });
+  }
+
+  // Toggle Menú Hamburguesa en Móviles (Vanilla Fallback & Bootstrap Sync)
+  const navbarToggler = document.querySelector('.navbar-toggler');
+  const navbarCollapse = document.getElementById('navbarMain');
+
+  if (navbarToggler && navbarCollapse) {
+    navbarToggler.addEventListener('click', function (e) {
+      // Toggle de la clase show
+      const isExpanded = navbarCollapse.classList.contains('show');
+      if (isExpanded) {
+        navbarCollapse.classList.remove('show');
+        navbarToggler.setAttribute('aria-expanded', 'false');
+      } else {
+        navbarCollapse.classList.add('show');
+        navbarToggler.setAttribute('aria-expanded', 'true');
+      }
+    });
+
+    // Cerrar menú móvil al seleccionar cualquier enlace
+    const navLinks = navbarCollapse.querySelectorAll('.nav-link, .btn');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function () {
+        if (window.innerWidth < 992) {
+          navbarCollapse.classList.remove('show');
+          navbarToggler.setAttribute('aria-expanded', 'false');
+        }
+      });
     });
   }
 
